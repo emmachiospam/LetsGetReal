@@ -42,4 +42,12 @@ public class RationalNumber extends RealNumber
     return reciprocal;
   }
 
+  public boolean equals(RationalNumber other) {
+    return(this.getNumerator() == other.getNumerator() && this.getDenominator() == other.getDenominator());
+  }
+
+  public String toString() {
+    return(numerator + "/" + denominator);
+  }
+
 }
