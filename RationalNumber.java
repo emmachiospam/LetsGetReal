@@ -35,4 +35,11 @@ public class RationalNumber extends RealNumber
     return denominator;
   }
 
+  public RationalNumber reciprocal() {
+    int newNume = getNumerator();
+    int newDeno = getDenominator();
+    RationalNumber reciprocal = new RationalNumber(newDeno, newNume);
+    return reciprocal;
+  }
+
 }
